@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { deepMerge, computeSpeedFromComponents } from "../src/utils.js";
 
 describe("deepMerge", () => {
-  it("返回目标对象拷贝且不污染源", () => {
+  it("返回目标对象拷贝", () => {
     const to = { a: 1, nested: { x: 1, y: 2 } };
     const from = { b: 2, nested: { y: 3 } };
     const result = deepMerge(from, to);
